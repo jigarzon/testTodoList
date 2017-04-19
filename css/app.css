@@ -1,0 +1,28 @@
+body {
+  font-family: Verdana, sans; }
+
+.content {
+  margin: 10px; }
+
+.todo-item small {
+  padding-left: 5px;
+  color: #777; }
+
+.todo-item {
+  float: left; }
+
+.todo-list {
+  margin: 10px; }
+
+.todo-list li {
+  display: flex; }
+
+.todo-actions {
+  display: flex;
+  margin-left: auto;
+  align-items: start; }
+
+.todo-actions a {
+  margin: 2px; }
+
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,29 @@
+{
+    "result": [
+        {
+            "id": 1,
+            "state" : 1,
+            "title": "Limpiar la casa", 
+            "description": "Recordar pasar el trapo y refregar las ventanas"
+        },
+        {
+            "id": 2,
+            "state" : 1,
+            "title": "Hacer las compras", 
+            "description": "No olvidarse de los tomates!"
+        },
+        {
+            "id": 3,
+            "state" : 2,
+            "title": "Ir a cargar Nafta", 
+            "description": "Antes pasar a darle a Tito los papeles"
+        },
+        {
+            "id": 4,
+            "state" : 1,
+            "title": "Lavar el auto", 
+            "description": "Fijarse bien que no rayen nada!"
+        }
+
+    ]
+}

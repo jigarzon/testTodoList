@@ -1,0 +1,28 @@
+<div class="content" >
+    <div class="btn-group" role="group" aria-label="...">
+        <button type="button" class="btn btn-success" (click)="verActivos()">Activos</button>
+        <button type="button" class="btn btn-warning" (click)="verCerrados()">Completados</button>
+        <button type="button" class="btn btn-danger" (click)="verEliminados()">Eliminados</button>
+        <button type="button" class="btn " (click)="verTodos()">Todos</button>
+    </div>
+    <ul class="list-group todo-list">
+        <li *ngFor="let todo of todos" class="list-group-item clearfix">
+    <todo-item class="todo-item" [todo]="todo"></todo-item>
+    <div class="todo-actions">
+        <a class="btn btn-xs btn-success" (click)="completar(todo)">
+            <span class="glyphicon glyphicon-check"></span>
+        </a>
+        <a class="btn btn-xs btn-primary" [routerLink]="['/todo', todo.id]" >
+            <span class="glyphicon glyphicon-pencil"></span>
+        </a>
+        <a class="btn btn-xs btn-danger" (click)="eliminar(todo)">
+            <span class="glyphicon glyphicon-trash"></span>
+        </a>
+    </div>
+    </li>
+</ul>
+     <a class="btn  btn-success" [routerLink]="['/todo', 'new']">
+            <span class="glyphicon glyphicon-plus"></span>
+         Agregar nueva tarea
+        </a>
+</div>
