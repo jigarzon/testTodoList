@@ -9,7 +9,7 @@ import {Router} from '@angular/router';
 })
 export class TodoListComponent implements OnInit {
     todos: Todo[] = [];
-    _filtro: TodoState = null;
+    _filtro: TodoState = TodoState.Active;
 
 
 
